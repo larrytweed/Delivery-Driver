@@ -1604,7 +1604,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.067894004, g: 0.1751657, b: 0.8396226, a: 1}
+  m_Color: {r: 0.12281384, g: 0.5377358, b: 0.06377458, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2167,7 +2167,7 @@ GameObject:
   - component: {fileID: 1769335728}
   m_Layer: 0
   m_Name: Tree 1
-  m_TagString: Untagged
+  m_TagString: Bump
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2249,7 +2249,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2578,9 +2578,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.067894004, g: 0.1751657, b: 0.8396226, a: 1}
+  m_Color: {r: 0.8773585, g: 0.12888417, b: 0.46533415, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2640,6 +2640,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   steerSpeed: 200
   moveSpeed: 20
+  slowSpeed: 10
+  boostSpeed: 30
 --- !u!212 &2055559020
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2766,6 +2768,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168ca7043cbf7be42b89126dfeac1acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasPackageColor:
+    serializedVersion: 2
+    rgba: 4280011284
+  noPackageColor:
+    serializedVersion: 2
+    rgba: 4294967295
   destroyDelay: 1
 --- !u!1 &2114325138
 GameObject:
@@ -2780,8 +2788,8 @@ GameObject:
   - component: {fileID: 2114325139}
   - component: {fileID: 2114325142}
   m_Layer: 0
-  m_Name: Circle
-  m_TagString: Untagged
+  m_Name: SpeedUp
+  m_TagString: Boost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2796,7 +2804,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2842,7 +2850,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.8962264, g: 0.13165587, b: 0.13165587, a: 1}
   m_FlipX: 0
